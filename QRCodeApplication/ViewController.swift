@@ -10,11 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    enum Tabs : Int{
+        case Dashboard
+        case Middle
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    @IBAction func loginBtn(_ sender: Any) {
+        let tabBarController = storyboard?.instantiateViewController(withIdentifier: "TabController") as! TabController
+        
+        tabBarController.selectedViewController = tabBarController.viewControllers?[Tabs.Middle.rawValue]
+        
+        present(tabBarController, animated: true,completion: nil)
+        
+    }
+    
 
 }
 

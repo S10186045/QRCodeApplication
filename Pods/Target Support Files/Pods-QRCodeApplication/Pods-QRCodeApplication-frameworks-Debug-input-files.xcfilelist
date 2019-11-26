@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-QRCodeApplication/Pods-QRCodeApplication-frameworks.sh
+${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework
+${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework
